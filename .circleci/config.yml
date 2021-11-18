@@ -25,7 +25,10 @@ jobs:
  
 workflows: 
   version: 2 
-  commit:       
+  commit: 
+    jobs: 
+      - build1 
+      
   schedule:
     triggers:
       - schedule:
